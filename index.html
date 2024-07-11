@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- tailwind 사용 위함 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="h-screen m-2">
+      <article>
+        <!-- Header(데브바) 부분 -->
+        <header class="flex justify-between p-1 border-b-2">
+          <!-- 로고 아이콘 -->
+          <div class="flex items-center">
+            <h1>
+              <a href="#">
+                <img
+                  src="https://papago.naver.com/808d2dddbe64c49fbae1bf503c124767.svg"
+                  alt=""
+                />
+              </a>
+            </h1>
+            <!-- 네브바 메뉴 -->
+            <ul class="flex ml-5">
+              <li class="ml-5">웹사이트 번역</li>
+              <li class="ml-5">GYM</li>
+              <li class="ml-5">사전</li>
+            </ul>
+          </div>
+          <!-- 네브바 아이콘 -->
+          <div class="flex ml-5">
+            <div class="m-2">
+              <i class="far fa-window-restore fa-lg text-[#6c757d] mr-1"></i>
+            </div>
+            <div class="m-2 ml-5">
+              <i class="far fa-star fa-lg text-[#6c757d] mr-1"></i>
+            </div>
+            <div class="m-2 ml-5">
+              <i
+                class="fas fa-sliders-h fa-lg fa-rotate-90 text-[#6c757d] mr-1"
+              ></i>
+            </div>
+          </div>
+        </header>
+        <!-- Section(번역입력폼) 부분 -->
+        <section>
+          <div class="flex flex-col justify-center m-20 md:flex md:flex-row">
+            <div class="border-2 border-gray-300 w-[500px] mr-5 flex-col rounded-2xl">
+              <div class="w-full p-2 border-b-2">
+                <select class="w-25 rounded-md border-0 bg-transparent py-0 text-sm">
+                  <option>언어감지</option>
+                  <option>한국어</option>
+                  <option>영어</option>
+                  <option>일본어</option>
+                  <option>중국어(간체)</option>
+                  <option>중국어(번체)</option>
+                </select>
+              </div>
+              <div>
+                <textarea type="text" placeholder="번역할 내용을 입력하세요" class="h-60 w-full p-5 text-gray-400 placeholder:text-green-400 placeholder:text-2xl"></textarea>
+              </div>
+              <div class="flex justify-between border-t-2">
+                <div class="flex m-2">
+                  <div class="mr-2">Sound</div>
+                  <div>Copy</div>
+                </div>
+                <div class="p-2 bg-green-500 rounded-br-xl">
+                  <button class="bg-transparent text-white">번역하기</button>
+                </div>
+              </div>
+            </div>
+            <div class="border-2 border-gray-300 w-[500px] mr-5 flex-col rounded-2xl">
+              <div class="w-full p-2 border-b-2">
+                <select class="w-25 rounded-md border-0 bg-transparent py-0 text-sm">
+                  <option>한국어</option>
+                  <option>영어</option>
+                  <option>일본어</option>
+                  <option>중국어(간체)</option>
+                  <option>중국어(번체)</option>
+                </select>
+              </div>
+              <div>
+                <textarea type="text" class="h-60 w-full p-5 text-gray-400"></textarea>
+              </div>
+              <div class="flex justify-between border-t-2">
+              </div>
+          </div>
+        </section>
+        <!-- Footer 부분 -->
+        <footer class="border-t-2 flex-col justify-between p-5">
+          <div class="mb-5">
+            <div class="flex justify-between">
+              <div class="flex items-center">
+                <a href="#">
+                  <img
+                    class="size-10"
+                    src="https://papago.naver.com/e3bff6deb50f078fe094f764fac152e8.png"
+                    alt="파파고 이미지"
+                  />
+                </a>
+                <h2 class="font-bold">APP Download</h2>
+              </div>
+              <div>
+                <select class="w-25 rounded-md border-0 bg-transparent py-0 text-sm">
+                  <option>한국어</option>
+                  <option>English</option>
+                  <option>日本語</option>
+                  <option>中文(简体)</option>
+                  <option>中文(繁體)</option>
+                  <option>Tiếng Việt</option>
+                  <option>Indonesia</option>
+                </select>
+              </div>
+            </div>
+            <div class="text-xs mt-2 mb-5">
+              <div>
+                <ul class="flex">
+                  <li>
+                    <a href="https://www.naver.com/rules/service.html" title=""
+                      ><span>이용약관</span></a
+                    >
+                  </li>
+                  <li class="ml-3 font-bold">
+                    <a href="https://www.naver.com/policy/privacy.html" title=""
+                      ><span>개인정보처리방침</span></a
+                    >
+                  </li>
+                  <li class="ml-3 font-bold">
+                    <a href="#" title=""><span>책임의 한계와 법적고지</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul class="flex">
+                  <li>
+                    <a
+                      href="https://help.naver.com/alias/contents2/papago/papago_new13.naver"
+                      ><span>고객센터</span></a
+                    >
+                  </li>
+                  <li class="ml-3">
+                    <a
+                      href="https://help.naver.com/alias/contents2/papago/papago_new15.naver"
+                      ><span>의견제안</span></a
+                    >
+                  </li>
+                  <li class="ml-3">
+                    <a href="#"><span>준수사항</span></a>
+                  </li>
+                  <li class="ml-3">
+                    <a href="#" title=""><span>품질 개선 동의</span></a>
+                  </li>
+                  <li class="ml-3">
+                    <a href="#" title=""><span>단축키</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>
+                    <a href="https://papago.naver.com/business" title=""
+                      ><span class="font-bold">제휴·API 이용문의</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="text-xs">ⓒ NAVER Corp.</div>
+          </div>
+        </footer>
+      </article>
+    </div>
+  </body>
+</html>
